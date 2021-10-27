@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inconsolata:wght@400;500;700&family=Lexend+Deca&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --color-bright-orange: hsl(31, 77%, 52%);
+  --color-dark-cyan: hsl(184, 100%, 22%);
+  --color-very-dark-cyan: hsl(179, 100%, 13%);
+
+  --color-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --color-very-light-gray: hsl(0, 0%, 95%);
+
+  --font-family-1: 'Lexend Deca', sans-serif;
+  --font-family-2: 'Big Shoulders Display', sans-serif;
+}
+body {
+  font-family: var(--font-family-1);
+  background-color: var(--color-very-light-gray);
+}
+
+a {
+  text-decoration: none;
+}
+
+.card__wrap {
+  display: flex;
+  max-width: 57.5rem;
+  margin: 10rem auto;
+}
+
+.card__container {
+  padding: 3rem;
+  margin-bottom: 4.1875rem;;
+}
+
+.card__container h1 {
+  color: var(--color-very-light-gray);
+  font-family: var(--font-family-2);
+  text-transform: uppercase;
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem;
+  font-weight: 700;
+  word-spacing: 0.375rem;
+}
+
+.card__container p {
+  color: var(--color-transparent-white);
+  line-height: 1.875rem;
+  margin-bottom: 5.265rem;
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
+.card__container a {
+  padding: .9375rem 2rem;
+  border: 3px solid var(--color-transparent-white);
+  border-radius: 60px;
+  color: var(--color-very-light-gray);
+  cursor: pointer;
+  margin-bottom: 4.1875rem;
+}
+
+.card__container a:hover {
+  border-color: var(--color-very-light-gray);
+}
+
+.card__sedans {
+  background-color: var(--color-bright-orange);
+  border-top-left-radius: 0.625rem;
+  border-bottom-left-radius: 0.625rem;
+}
+
+.card__suvs {
+  background-color: var(--color-dark-cyan);
+}
+
+.card__luxury {
+  background-color: var(--color-very-dark-cyan);
+  border-top-right-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+}
+
+/* responsive */
+
+@media (max-width: 375px){
+  .card__wrap {
+    flex-direction: column;
+    margin: 5.5265rem 1.5rem;
+  }
+
+  .card__container {
+    margin-bottom: 0;
+  }
+
+  .card__sedans {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+  }
+
+  .card__luxury {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+}
