@@ -84,6 +84,23 @@ a {
   border-bottom-right-radius: 0.625rem;
 }
 
+.attribution {
+  background-color: var(--color-bright-orange)
+}
+
+.attribution p {
+  color: var(--color-dark-cyan);
+  text-align: center;
+}
+
+.attribution p a{
+  color: var(--color-transparent-white);
+}
+
+.attribution p a:hover {
+  color: var(--color-very-light-gray);
+}
+
 /* responsive */
 
 @media (max-width: 375px){
